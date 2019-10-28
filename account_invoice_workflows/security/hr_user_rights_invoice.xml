@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.module.category" id="module_category_obro_group">
+            
+            <field name="name">Account Invoice Work Flow</field>
+            <field name="description">Authority Rights Access</field>
+            <field name="sequence">20</field>
+        </record>
+        
+        <record id="dir_appr" model="res.groups">
+            <field name="name">Approved</field>
+            <field name="category_id" ref="module_category_obro_group"/>
+        </record>
+        
+        <!-- <record id="dir_auth2" model="res.groups">
+            <field name="name">Authority 2</field>
+            <field name="category_id" ref="module_category_obro_group"/>
+        </record> -->
+        
+        
+    </data>
+    
+</odoo>
